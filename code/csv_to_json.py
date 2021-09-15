@@ -33,3 +33,23 @@ if __name__ == '__main__':
         
 
 #%%
+import pymongo
+
+#%%
+myclient = pymongo.MongoClient('mongodb://localhost:27017',
+                                username='root',
+                                password='root',
+                                authMechanism='SCRAM-SHA-256')
+print(myclient.list_database_names())      
+#%%
+import json
+ 
+# Opening JSON file
+f = open('tt.json',)
+ 
+# returns JSON object as
+# a dictionary
+data = json.load(f)
+mydb = myclient["mydatabase"]
+mycol = mydb["customers"]
+mycol.insert_many(data)        
