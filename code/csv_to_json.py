@@ -52,4 +52,31 @@ f = open('tt.json',)
 data = json.load(f)
 mydb = myclient["mydatabase"]
 mycol = mydb["customers"]
-mycol.insert_many(data)        
+mycol.insert_many(data)   
+
+#%%
+from bson import json_util
+import json
+from flask import Flask, jsonify
+import flask
+import pymongo
+app = Flask(__name__)
+myclient = pymongo.MongoClient('mongodb://localhost:27017',
+                                username='root',
+                                password='root',
+                                authMechanism='SCRAM-SHA-256')
+
+db = myclient["mydatabase"]
+@app.route("/add_one")
+def add_one():
+    db.todos.insert_one({'title': "todo title", 'body': "todo body"})
+    return flask.jsonify(message="success")
+@app.route("/")
+def home():
+    data = db["customers"].find()
+    return str(json.loads(json_util.dumps(data)))
+
+if __name__ == "__main__":
+    app.run(debug=True)  
+    
+#https://stackabuse.com/integrating-mongodb-with-flask-using-flask-pymongo/
