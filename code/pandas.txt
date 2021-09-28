@@ -1,0 +1,14 @@
+Processing c:\users\yawen\desktop\pandas-1.2.4-cp39-cp39-win_amd64.whl
+Collecting python-dateutil>=2.7.3
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     |████████████████████████████████| 247 kB 939 kB/s
+Collecting numpy>=1.16.5
+  Downloading numpy-1.21.2-cp39-cp39-win_amd64.whl (14.0 MB)
+     |████████████████████████████████| 14.0 MB 403 kB/s
+Collecting pytz>=2017.3
+  Downloading pytz-2021.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 3.3 MB/s
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, pytz, python-dateutil, numpy, pandas
+Successfully installed numpy-1.21.2 pandas-1.2.4 python-dateutil-2.8.2 pytz-2021.1 six-1.16.0
