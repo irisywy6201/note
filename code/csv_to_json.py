@@ -76,6 +76,14 @@ def home():
     data = db["customers"].find()
     return str(json.loads(json_util.dumps(data)))
 
+@app.route("/")
+def home():
+    data = db["tt"].find()
+    output = []
+    for s in data:
+        output.append({'_id' : str(s['_id']), 'name': s['name'], 'email': s['email']})
+    return jsonify({'result' : output})
+
 if __name__ == "__main__":
     app.run(debug=True)  
     
