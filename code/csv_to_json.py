@@ -83,6 +83,7 @@ def home():
     for s in data:
         output.append({'_id' : str(s['_id']), 'name': s['name'], 'email': s['email']})
     return jsonify({'result' : output})
+#https://www.footmark.info/programming-language/design/restful-webapi-design-guide/
 
 if __name__ == "__main__":
     app.run(debug=True)  
