@@ -89,3 +89,10 @@ if __name__ == "__main__":
     app.run(debug=True)  
     
 #https://stackabuse.com/integrating-mongodb-with-flask-using-flask-pymongo/
+
+#%%
+textfile = open("a_file.txt", "w")
+for element in data:
+    json.dump(element,textfile)
+    textfile.write("\n")
+textfile.close()
