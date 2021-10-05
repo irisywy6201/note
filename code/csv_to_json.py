@@ -94,6 +94,7 @@ def home():
     return jsonify({'result' : data})
     #json_data = json_util.loads(json_util.dumps(list(data)))
     #return json_data
+# https://github.com/jrussumbrella/dress-shop/blob/78a06cd9173ab79a14027ef8a7e79748152b1383/client/pages/index.tsx
 if __name__ == "__main__":
     app.run(debug=True)  
     
