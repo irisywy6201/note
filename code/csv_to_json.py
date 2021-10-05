@@ -84,7 +84,16 @@ def home():
         output.append({'_id' : str(s['_id']), 'name': s['name'], 'email': s['email']})
     return jsonify({'result' : output})
 #https://www.footmark.info/programming-language/design/restful-webapi-design-guide/
-
+@app.route("/")
+def home():
+    data = list(db["tt"].find())
+#    output = []
+    for index,s in enumerate(data):
+        data[index]['_id'] = str(s['_id'])
+#        output.append({'_id' : str(s['_id']), 'name': s['name'], 'email': s['email']})
+    return jsonify({'result' : data})
+    #json_data = json_util.loads(json_util.dumps(list(data)))
+    #return json_data
 if __name__ == "__main__":
     app.run(debug=True)  
     
