@@ -7,3 +7,4 @@
   -    flask fab create-admin
   -    superset load_examples #download example
   - https://blog.csdn.net/nikeylee/article/details/115264818    
+  - https://github.com/AlexsJones/kubernetes-mongodb-cluster/blob/master/templates/mongo/statefulset.yaml
