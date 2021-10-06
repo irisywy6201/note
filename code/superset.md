@@ -1,0 +1,9 @@
+- docker pull amancevice/superset
+- docker run --name my_superset -p 8088:8088
+- 進入 container
+  -    superset db upgrade
+  -    superset init
+  -    export FLASK_APP=superset
+  -    flask fab create-admin
+  -    superset load_examples #download example
+  - https://blog.csdn.net/nikeylee/article/details/115264818    
