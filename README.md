@@ -1,5 +1,4 @@
 # note
-https://slidesgo.com/theme/macari-company-profile#search-Business&position-12&results-1240
-https://slidesgo.com/theme/renewal-project-proposal#search-Business&position-15&results-1240
-https://slidesgo.com/theme/management-consulting-toolkit#search-Business&position-6&results-1232
-https://slidesgo.com/theme/isometric-seo-strategy#search-Business&position-5&results-1232
+https://iter01.com/405202.html
+https://blog.csdn.net/u012723673/article/details/108349860
+https://vulncat.fortify.com/zh-tw/detail?id=desc.configuration.java.dynamic_code_evaluation_unsafe_deserialization#Java%2FJSP
