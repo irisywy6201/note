@@ -1,0 +1,5 @@
+thank you for your time. i'm appreciate that. have a nice day~ byewn
+and the next item is we would like to kown more about the pricing detail.
+and maybe Is there any special offer for our company? Will you let me know the details of this part?
+yse i'll write it down.
+This sounds great for us.
