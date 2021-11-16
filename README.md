@@ -12,4 +12,8 @@ Architecture
 Massive data handling
 Cache mechanism
 Bizboard API
-![image](https://user-images.githubusercontent.com/20381545/140766569-c826604d-8198-4baf-8dd6-2c5b0e035fb5.png)
+Survey other Biz dashboard financial related API and contact with Finnhub for seaking a new solution
+Design and deploy MongoDB cluster to address high availability database requirements
+
+
+
