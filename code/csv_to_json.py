@@ -99,10 +99,13 @@ if __name__ == "__main__":
     app.run(debug=True)  
     
 #https://stackabuse.com/integrating-mongodb-with-flask-using-flask-pymongo/
-
+#%%
+df = pd.read_csv ('cast.csv')[:100]
+result = df.to_json(orient="records")
+parse = json.loads(result)
 #%%
 textfile = open("a_file.txt", "w")
-for element in data:
+for element in parse:
     json.dump(element,textfile)
     textfile.write("\n")
 textfile.close()
