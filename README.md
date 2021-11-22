@@ -12,8 +12,10 @@ Architecture
 Massive data handling
 Cache mechanism
 Bizboard API
-Survey other Biz dashboard financial related API and contact with Finnhub for seaking a new solution
-Design and deploy MongoDB cluster to address high availability database requirements
 
+- Design and deploy MongoDB cluster in k8s of dev enverionment for the usage of chatbot KM maintenance and Biz dashboard transcript. Share the mongo DB design pattern in EA meeting. Then planned to adopte the mongo DB design pattern to CBI Transcript repo expected to improve query performance.
+- Migrated partical CBI Transcript API from related database to mongo NO SQL database in the dev enverionment of k8s. And finished the bootcamp by intergrating the repo through Azure DevOps CI CD pipeline.
+- Evulated the benchmark and critical requirements of Metabase and Superset. Try to add value the reporting tool by using the benefits of self-service and NLQ function supported by Metabse.
+- Surveyed other Biz dashboard financial related API and seeked a new solution to replace the datasource of the crawler from Seeking Alpha.  
 
 
