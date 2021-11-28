@@ -109,3 +109,22 @@ for element in parse:
     json.dump(element,textfile)
     textfile.write("\n")
 textfile.close()
+import requests
+from bs4 import BeautifulSoup
+import codecs
+f = codecs.open("aapl.html", "r", "utf-8")
+S = BeautifulSoup(f.read(), "lxml")
+result = S.find("span", class_="ticker-hover-wrapper")
+
+#%%
+import logging
+
+logging.basicConfig(level=logging.INFO, filename='log.txt', filemode='w',
+	format='[%(asctime)s %(levelname)-8s] %(message)s',
+	datefmt='%Y%m%d %H:%M:%S')
+ 
+logging.debug('Hello debug!')
+logging.info('Hello info!')
+logging.warning('Hello warning!')
+logging.error('Hello error!')
+logging.critical('Hello critical!')
