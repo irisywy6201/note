@@ -2,3 +2,4 @@
 - https://cljdoc.org/d/metabase-core/metabase-core/1.0.0-SNAPSHOT/api/metabase.query-processor.middleware.cache
 - https://github.com/metabase/metabase/issues/10745
 - https://kapwi.ng/c/C8i2CkSpiO
+- https://segmentfault.com/q/1010000010636309
