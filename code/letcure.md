@@ -4,3 +4,5 @@
 - https://kapwi.ng/c/C8i2CkSpiO
 - https://segmentfault.com/q/1010000010636309
 - https://stackoverflow.com/questions/53516594/why-do-i-keep-getting-delete-cr-prettier-prettier
+- SQLAlchemy             1.3.24
+SQLAlchemy-Utils       0.37.8
