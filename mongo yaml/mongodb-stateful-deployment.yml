@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mongodb-replica
+  namespace: dev
+spec:
+  serviceName: mongo
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mongo
+  template:
+    metadata:
+      labels:
+        app: mongo
+        selector: mongo
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+      - name: mongodb
+        image: docker.io/mongo:4.2
+        command: ["/bin/sh"]
+        args: ["-c", "mongod --replSet=rs0 --bind_ip_all; /usr/local/bin/custom-setup.sh"]
+        env:
+        - name: MONGODB_ROOT_PASSWORD 
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: password
+        resources:
+          limits:
+            cpu: 1
+            memory: 1500Mi
+          requests:
+            cpu: 1
+            memory: 1000Mi
+        ports:
+        - name: mongo-port
+          containerPort: 27017
+        volumeMounts:
+        - name: mongo-data
+          mountPath: /data/db
+        - name: custom-mongodb-scripts
+          mountPath: /usr/local/bin
+      volumes:
+        - name: custom-mongodb-scripts
+          configMap:
+            name: custom-mongodb-scripts
+    
+            
+  volumeClaimTemplates:
+  - metadata:
+      name: mongo-data
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 1Gi
