@@ -6,3 +6,4 @@
 - https://stackoverflow.com/questions/53516594/why-do-i-keep-getting-delete-cr-prettier-prettier
 - SQLAlchemy             1.3.24
 SQLAlchemy-Utils       0.37.8
+- https://rockset.com/blog/handling-slow-queries-in-mongodb-part-2-solutions/
