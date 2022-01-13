@@ -7,3 +7,4 @@
 - SQLAlchemy             1.3.24
 SQLAlchemy-Utils       0.37.8
 - https://rockset.com/blog/handling-slow-queries-in-mongodb-part-2-solutions/
+- mongosqld --config example-mongosqld-config.yml
